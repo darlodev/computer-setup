@@ -47,7 +47,28 @@ brew install --cask discord
 brew install --cask slack
 brew install --cask whatsapp
 brew install --cask zoom
+brew install --cask microsoft-teams
 ```
+
+### Other Applications
+Applications downloaded from either the App Store or Third-Party website.
+
+**App Store:** <br>
+- amphetamine
+- trello
+- pages
+- keynote
+- numbers
+- Microsoft Word
+- Microsoft PowerPoint
+- Microsoft Excel
+- Microsoft Outlook
+- Microsoft OneNote
+- OneDrive
+
+**Third-Party:** <br>
+- Logitech Options
+- Logitech Bolt
 
 ### Terminal (ZSH)
 Install OhMyZsh.
@@ -63,6 +84,8 @@ git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerl
 ZSH_THEME="powerlevel10k/powerlevel10k"
 ```
 **Plugins:** <br>
+- git
+- web-search
 - auto-suggestions
 - syntax-highlighting
 ```
@@ -73,5 +96,5 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 ```
 *.zshrc:*
 ```
-plugins=(zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(git web-search zsh-autosuggestions zsh-syntax-highlighting)
 ```
