@@ -62,10 +62,14 @@ git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerl
 ```
 ZSH_THEME="powerlevel10k/powerlevel10k"
 ```
-**Plugins:**
-Auto-Suggestions for terminal. 
+**Plugins:** <br>
+- auto-suggestions
+- syntax-highlighting
 ```
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+```
+```
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 ```
 *.zshrc:*
 ```
