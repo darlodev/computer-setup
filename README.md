@@ -27,7 +27,14 @@ brew install --cask rectangle
 brew install --cask flux
 ```
 
-
+**Developer Applications:**
+```
+brew install --cask visual-studio-code
+brew install --cask gitkraken
+brew install --cask figma
+brew install --cask docker
+brew install --cask raspberry-pi-imager
+```
 
 ### Terminal (ZSH)
 - Install OhMyZsh.
