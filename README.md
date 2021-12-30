@@ -18,6 +18,16 @@ Move to using iTerm rom this point onwards.
 ```
 brew install git tmux tree neofetch
 ```
+Time to install applications for this new computer. <br>
+**System Applications:**
+```
+brew install --cask alfred
+brew install --cask bartender
+brew install --cask rectangle
+brew install --cask flux
+```
+
+
 
 ### Terminal (ZSH)
 - Install OhMyZsh.
