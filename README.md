@@ -73,5 +73,5 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 ```
 *.zshrc:*
 ```
-plugins=(zsh-autosuggestions)
+plugins=(zsh-autosuggestions zsh-syntax-highlighting)
 ```
