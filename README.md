@@ -1,100 +1,102 @@
-# New Computer (setup)
+# SETUP
+Installation is optimised for software development, opting for apple-silicon-specific downloads over universal downloads, followed by a preference for downloading and installing with homebrew.
 
 ```
 xcode-select --install
 ```
 
-### Homebrew
-Install Homebrew in terminal.
+## Homebrew
+Install Homebrew
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
-Download and install a new (and better) terminal.
+Install iTerm
 ```
 brew install --cask iterm2
 ```
-Move to using iTerm rom this point onwards.
-Install packages to be used within terminal.
+Install Command Line Tools
 ```
-brew install git tmux tree neofetch
+brew install gh git neofetch tree tmux
 ```
-Time to install applications for this new computer. <br>
-**System Applications:**
+```
+brew install docker
+```
+System Applications
 ```
 brew install --cask alfred
 brew install --cask bartender
 brew install --cask rectangle
-brew install --cask flux
-```
-```
 brew install --cask cleanmymac
-brew install --cask brave-browser
-brew install --cask google-chrome
-brew install --cask notion
 ```
-**Developer Applications:**
+Developer Applications
 ```
-brew install --cask visual-studio-code
-brew install --cask gitkraken
-brew install --cask figma
-brew install --cask docker
 brew install --cask raspberry-pi-imager
+brew install --cask postgres-unofficial
 ```
-
-**Social Applications:**
+Other Applications
 ```
+brew install --cask brave-browser
 brew install --cask discord
-brew install --cask slack
-brew install --cask whatsapp
-brew install --cask zoom
-brew install --cask microsoft-teams
+```
+Application | Link
+:---:|---
+Visual Studio Code | https://code.visualstudio.com/#alt-downloads
+Docker Desktop | https://www.docker.com/products/docker-desktop/
+JetBrains Toolbox | https://www.jetbrains.com/toolbox-app/
+Postman | https://www.postman.com/downloads/
+MongoDB Compass | https://www.mongodb.com/try/download/compass
+
+
+## Programming Languages
+Language | Link
+:---:|---
+C# / .Net | https://dotnet.microsoft.com/en-us/download
+Java | https://adoptium.net/en-GB/temurin/releases/
+Python | https://www.python.org/downloads/
+
+Node Version Manager
+```
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+```
+Bun
+```
+curl -fsSL https://bun.sh/install | bash
 ```
 
-### Other Applications
-Applications downloaded from either the App Store or Third-Party website.
+## Third-Party Applications
+Application | Link
+:---:|---
+Logi Options | https://www.logitech.com/en-us/software/logi-options-plus.html
+Zoom | https://zoom.us/download
+Chrome Dev | https://www.google.com/intl/en_in/chrome/dev/
+Firefox Developer Edition | https://www.mozilla.org/en-GB/firefox/all/#product-desktop-developer
 
-**App Store:** <br>
-- amphetamine
-- trello
-- pages
-- keynote
-- numbers
-- Microsoft Word
-- Microsoft PowerPoint
-- Microsoft Excel
-- Microsoft Outlook
-- Microsoft OneNote
-- OneDrive
+## App Store
+- Amphetamine
+- Screens? (£29.99)
+- Xcode
 
-**Third-Party:** <br>
-- Logitech Options
-- Logitech Bolt
-
-### Terminal (ZSH)
-Install OhMyZsh.
+## Terminal
+Install OhMyZsh
 ```
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
-Install PowerLevel10k (OhMyZsh Theme).
+Install PowerLevel10k
 ```
 git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
 ```
-*.zshrc:*
-```
-ZSH_THEME="powerlevel10k/powerlevel10k"
-```
-**Plugins:** <br>
-- git
-- web-search
-- auto-suggestions
-- syntax-highlighting
+Install OhMyZsh Plugins
 ```
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 ```
 ```
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 ```
-*.zshrc:*
+.zshrc
 ```
+ZSH_THEME="powerlevel10k/powerlevel10k"
+
+---
+
 plugins=(git web-search zsh-autosuggestions zsh-syntax-highlighting)
 ```
